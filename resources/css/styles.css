@@ -8,6 +8,7 @@ body {
 	position: relative;
 	margin-top: 30px;
 	left: -70px;
+	font-size: 30px;
 	font-family: 'Crafty Girls', cursive;
 }
 
@@ -21,8 +22,8 @@ body {
 	-webkit-border-radius: 33px;
 	-moz-border-radius: 33px;
 	border-radius: 33px;
-	font-size: 22px;
-	font-family: 'Dosis', sans-serif;
+	font-size: 30px;
+	font-family: 'Crafty Girls',cursive;
 }
 
 .bubble:after {
