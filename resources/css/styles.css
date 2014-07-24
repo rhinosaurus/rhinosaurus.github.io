@@ -4,38 +4,38 @@ body {
 
 .bubble {
 	position: relative;
-	width: 200px;
+	width: 360px;
 	height: 100px;
-	text-align: center;
-	line-height: 100px;
-	background-color: #fff;
-	border: 8px solid #666;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	-webkit-box-shadow: 2px 2px 4px #888;
-	-moz-box-shadow: 2px 2px 4px #888;
-	box-shadow: 2px 2px 4px #888;
-}
-
-.bubble:before {
-	content: ' ';
-	position: absolute;
-	width: 0;
-	height: 0;
-	left: 30px;
-	top: 100px;
-	border: 25px solid;
-	border-color: #666 transparent transparent #666;
+	padding: 4px;
+	background: #FFFFFF;
+	border: #b30000 solid 6px;
+	-webkit-border-radius: 33px;
+	-moz-border-radius: 33px;
+	border-radius: 33px;
 }
 
 .bubble:after {
-	content: ' ';
+	content: "";
 	position: absolute;
+	bottom: -18px;
+	left: 308px;
+	border-style: solid;
+	border-width: 18px 12px 0;
+	border-color: #FFFFFF transparent;
+	display: block;
 	width: 0;
-	height: 0;
-	left: 38px;
-	top: 100px;
-	border: 15px solid;
-	border-color: #fff transparent transparent #fff;
+	z-index: 1;
+}
+
+.bubble:before {
+	content: "";
+	position: absolute;
+	top: 114px;
+	left: 303px;
+	border-style: solid;
+	border-width: 23px 17px 0;
+	border-color: #b30000 transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
 }
