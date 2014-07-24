@@ -4,6 +4,11 @@ body {
 	text-align: center;
 }
 
+.content {
+	position: relative;
+	top: 50%;
+}
+
 .name {
 	position: relative;
 	margin-top: 30px;
