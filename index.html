@@ -12,11 +12,8 @@
 					var filename,
 						node = e.target.parentNode;
 
-					console.log(node );
-					console.log( node.name );
-					filename = node.name + '.' + e.target.name;
-console.log(filename);
-					//document.location.pathname = 'resources/presentations/' + filename;
+					filename = node.getAttribute( 'name' ) + '.' + e.target.name;
+					document.location.pathname = 'resources/presentations/' + filename;
 				};
 
 				document.getElementById( 'presentations' ).addEventListener( 'click', this.handleClick );
