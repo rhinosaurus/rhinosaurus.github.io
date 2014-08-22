@@ -6,7 +6,15 @@
 		<script>
 			var waitLoad = function() {
 				this.handleClick = function( e ) {
-					console.log( e.target );
+					if( !e.target ) { return; }
+					if( e.target.nodeName !== 'IMG' ) { return; }
+
+					var filename,
+						node = e.target.parentNode;
+
+					filename = node.name + '.' + e.target.name;
+
+					document.location.pathname = 'resources/presentations/' + filename;
 				};
 
 				document.getElementById( 'presentations' ).addEventListener( 'click', this.handleClick );
@@ -25,9 +33,9 @@
 			<div class="content-bubble" id="presentations">
 				<h1>Presentations</h1>
 				<ul>
-					<li>ExtJS MVC Crash Course <img src="resources/images/pp_icon.png" name="ppt"/> <img src="resources/images/pdf_icon.png" name="pdf"/></li>
-					<li>Making ExtJS Perform <img src="resources/images/pp_icon.png" name="ppt"/> <img src="resources/images/pdf_icon.png" name="pdf"/></li>
-					<li>Managing Data (The Ext Way) <img src="resources/images/pp_icon.png" name="ppt"/> <img src="resources/images/pdf_icon.png" name="pdf"/></li>
+					<li name="extjs_mvc">ExtJS MVC Crash Course <img src="resources/images/pp_icon.png" name="ppt"/> <img src="resources/images/pdf_icon.png" name="pdf"/></li>
+					<li name="making_extjs_perform">Making ExtJS Perform <img src="resources/images/pp_icon.png" name="ppt"/> <img src="resources/images/pdf_icon.png" name="pdf"/></li>
+					<li name="managing_data">Managing Data (The Ext Way) <img src="resources/images/pp_icon.png" name="ppt"/> <img src="resources/images/pdf_icon.png" name="pdf"/></li>
 				</ul>
 			</div>
 			<div class="content-bubble">
