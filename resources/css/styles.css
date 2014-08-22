@@ -63,9 +63,5 @@ body {
 }
 
 .content-bubble ul {
-	width: 250px;
-}
-
-.content-bubble li {
-	display: inline;
+	list-style-type: none;
 }
