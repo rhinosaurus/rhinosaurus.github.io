@@ -12,9 +12,10 @@
 					var filename,
 						node = e.target.parentNode;
 
+					console.log(node );
 					filename = node.name + '.' + e.target.name;
 
-					document.location.pathname = 'resources/presentations/' + filename;
+					//document.location.pathname = 'resources/presentations/' + filename;
 				};
 
 				document.getElementById( 'presentations' ).addEventListener( 'click', this.handleClick );
