@@ -62,6 +62,10 @@ body {
 	font-size: 12px;
 }
 
+.content-bubble ul {
+	width: 250px;
+}
+
 .content-bubble li {
 	display: inline;
 }
