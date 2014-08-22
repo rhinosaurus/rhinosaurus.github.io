@@ -58,10 +58,7 @@ body {
 
 .content-bubble {
 	margin-top: 10px;
+	font-family: tahoma, arial;
+	font-size: 12px;
 }
 
-.content-bubble ul {
-	columns: 2;
-	-webkit-columns: 2;
-	-moz-columns: 2;
-}
