@@ -60,6 +60,8 @@ body {
 	margin-top: 10px;
 }
 
-.content-bubble li {
-	display: inline;
+.content-bubble ul {
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
 }
