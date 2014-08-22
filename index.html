@@ -3,8 +3,17 @@
 		<title>Brandon Ryall - The Playground</title>
 		<link rel="stylesheet" type="text/css" href="resources/css/styles.css" />
 		<link href='http://fonts.googleapis.com/css?family=Dosis|Crafty+Girls' rel='stylesheet' type='text/css'>
+		<script>
+			var waitLoad = function() {
+				this.handleClick = function( e ) {
+					console.log( e.target );
+				};
+
+				document.getElementById( 'presentations' ).addEventListener( 'click', this.handleClick );
+			};
+		</script>
 	</head>
-	<body>
+	<body onload="waitLoad">
 		<div class="content">
 			<div class="bubble">
 				Something something something
@@ -13,7 +22,7 @@
 				- Brandon Ryall
 			</div>
 
-			<div class="content-bubble">
+			<div class="content-bubble" id="presentations">
 				<h1>Presentations</h1>
 				<ul>
 					<li>ExtJS MVC Crash Course <img src="resources/images/pp_icon.png" name="ppt"/> <img src="resources/images/pdf_icon.png" name="pdf"/></li>
